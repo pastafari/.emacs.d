@@ -13,3 +13,12 @@ List of packages:
 * starter-kit-js
 * color-theme 
 * color-theme-solarized
+
+List of modes (not from package.el):
+-----------------------------------
+* Textmate mode
+
+List of color themes (not from package.el):
+------------------------------------------
+* Railscast
+* Zenburn (uses 'color-theme-load-path)
