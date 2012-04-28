@@ -3,3 +3,7 @@ auto-save-list
 backups
 url
 .smex-items
+/eshell/history
+/eshell/lastdir
+/themes/#color-theme-railscasts.el#
+/elpa/archives/gnu/archive-contents

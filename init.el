@@ -2,7 +2,7 @@
 (set-frame-parameter nil 'fullscreen 'fullboth)
 
 
-;; Package management 
+;; Package management stuff
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -12,24 +12,34 @@
   (package-refresh-contents))
 
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
-                                  starter-kit-ruby starter-kit-js starter-kit-eshell)
+                                  starter-kit-ruby starter-kit-js
+                                  starter-kit-eshell autopair
+                                  markdown-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
+;; Autoload markdown mode for .md files
+(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
+;; Enable autopair for all buffers
+(require 'autopair)
+(autopair-global-mode)
+(setq autopair-autowrap t)
+
 ;; Not yet packages. Useful all the same!
-;; Textmate emulation by @defunkt
+;; Textmate navigation emulation by @defunkt
 (add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
 (require 'textmate)
 (textmate-mode)
 
+;; Use custom-theme-load-path. Put more themes in ./themes
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; Default color-theme. Zenburn (https://github.com/bbatsov/zenburn-emacs)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'zenburn)
-
 
 ;; Default font is Inconsolata 18pt
 (set-face-attribute 'default nil
