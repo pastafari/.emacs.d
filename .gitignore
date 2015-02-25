@@ -5,5 +5,12 @@ url
 .smex-items
 /eshell/history
 /eshell/lastdir
-/themes/#color-theme-railscasts.el#
 /elpa/archives/gnu/archive-contents
+/el-get/
+/auto-save-list/
+/elpa/
+/el-get-init-files/init-cider.elc
+*.elc
+*.*~
+
+/cider-history
