@@ -15,6 +15,10 @@
 ;; Where to store the cider history.
 (setq cider-repl-history-file "~/.emacs.d/cider-history")
 
+;; Because of cut-paste fuckery, can't start from shell, no PATH, and so forth.
+;; TODO: fix this.
+(setq cider-lein-command "/usr/local/bin/lein")
+
 ;; Wrap when navigating history.
 (setq cider-repl-wrap-history t)
 

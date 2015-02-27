@@ -7,25 +7,6 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-;; These settings relate to how emacs interacts with your operating system
-(setq ;; makes killing/yanking interact with the clipboard
-      x-select-enable-clipboard t
-
-      ;; I'm actually not sure what this does but it's recommended?
-      x-select-enable-primary t
-
-      ;; Save clipboard strings into kill ring before replacing them.
-      ;; When one selects something in another program to paste it into Emacs,
-      ;; but kills something in Emacs before actually pasting it,
-      ;; this selection is gone unless this variable is non-nil
-      save-interprogram-paste-before-kill t
-
-      ;; Shows all options when running apropos. For more info,
-      ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Apropos.html
-      apropos-do-all t
-
-      ;; Mouse yank commands yank at point instead of at click.
-      mouse-yank-at-point t)
 
 ;; No cursor blinking, it's distracting
 (blink-cursor-mode 0)
@@ -41,17 +22,38 @@
 
 ;; Enable line numbers globally
 (global-linum-mode 1)
+
+;; yes/no -> y/n
+(defalias 'yes-or-no-p 'y-or-n-p)
 ;; END UI setup
 
+;;; Customizations for Mac OS X
+(defun copy-from-osx ()
+  "Make cut and paste work with the OS X clipboard"
+  (shell-command-to-string "pbpaste"))
 
-;; On Mac OS, set Command key to be meta, and option key to be super
-(setq mac-option-modifier 'super)
-(setq mac-command-modifier 'meta)
+(defun paste-to-osx (text &optional push)
+  "Make cut and paste work with the OS X clipboard"
+  (let ((process-connection-type nil))
+    (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+      (process-send-string proc text)
+      (process-send-eof proc))))
+
+(setq interprogram-cut-function 'paste-to-osx
+      interprogram-paste-function 'copy-from-osx
+      mac-option-modifier 'super
+      mac-command-modifier 'meta)
+;;; End Mac OS X
 
 ;; Enable global Ido mode
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+;; END IDO
+
+;; Less GC pauses
+(setq gc-cons-threshold 20000000)
+;;
 
 ;; Org mode setup
 (require 'org)
@@ -62,6 +64,8 @@
 (setq org-agenda-files (list "~/Dropbox/orgs/work.org"
 			     "~/Dropbox/orgs/personal.org"
 			     "~/Dropbox/orgs/rebelguru.org"))
+
+(setq initial-buffer-choice "~/Dropbox/orgs/work.org")
 ;; END org mode setup
 
 ;; el-get basic setup
@@ -89,6 +93,7 @@
 
 ;; My packages
 (defvar my-packages '(ace-jump-mode
+		      cider
 		      clojure-mode
                       company-mode
 		      darcula-theme

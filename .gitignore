@@ -12,5 +12,4 @@ url
 /el-get-init-files/init-cider.elc
 *.elc
 *.*~
-
 /cider-history
