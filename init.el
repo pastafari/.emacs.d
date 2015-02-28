@@ -93,15 +93,15 @@
 
 ;; My packages
 (defvar my-packages '(ace-jump-mode
-		      cider
+		      rainbow-delimiters
+		      paredit
+		      company-mode
 		      clojure-mode
-                      company-mode
+		      cider
 		      darcula-theme
                       ido-ubiquitous
 		      magit
-		      markdown-mode
-		      paredit
-		      rainbow-delimiters))
+		      markdown-mode))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
