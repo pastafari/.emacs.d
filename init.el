@@ -46,9 +46,20 @@
 ;;; End Mac OS X
 
 ;; Enable global Ido mode
+(add-hook 'ido-setup-hook
+ (lambda ()
+   ;; Go straight home
+   (define-key ido-file-completion-map
+     (kbd "~")
+     (lambda ()
+       (interactive)
+       (if (looking-back "/")
+           (insert "~/")
+         (call-interactively 'self-insert-command))))))
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+
 
 ;; enable recent files
 (require 'recentf)
@@ -108,6 +119,7 @@
 		      darcula-theme
 		      enh-ruby-mode
 		      exec-path-from-shell
+		      find-file-in-project
                       ido-ubiquitous
 		      inf-ruby
 		      magit
