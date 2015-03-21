@@ -123,17 +123,3 @@
 
 (el-get 'sync my-packages)
 ;; END el-get setup
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(org-agenda-files
-   (quote
-    ("~/Dropbox/orgs/muquestion/work.org" "/Users/mohit/Dropbox/orgs/31.org" "/Users/mohit/Dropbox/orgs/accounts.org" "/Users/mohit/Dropbox/orgs/ideas.org" "/Users/mohit/Dropbox/orgs/lan-setup.org" "/Users/mohit/Dropbox/orgs/leads.org" "/Users/mohit/Dropbox/orgs/personal.org" "/Users/mohit/Dropbox/orgs/rebelguru.org" "/Users/mohit/Dropbox/orgs/work.org"))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
