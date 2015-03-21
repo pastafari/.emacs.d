@@ -25,11 +25,7 @@
 
 ;; yes/no -> y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; Prefer to split windows horizontally ||| instead of default vertical split
-(setq split-height-threshold nil)
-(setq split-width-threshold 0)
-;; END UI setup
+;; End UI setup
 
 ;;; Customizations for Mac OS X
 (defun copy-from-osx ()
