@@ -101,10 +101,6 @@
 
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files/")
 
-;; Exec path for Mac
-(when (eq system-type 'darwin)
-  (el-get 'sync '(exec-path-from-shell)))
-
 ;; My packages
 (defvar my-packages '(ace-jump-mode
 		      rainbow-delimiters
