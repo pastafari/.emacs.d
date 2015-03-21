@@ -53,6 +53,11 @@
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+
+;; enable recent files
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
 ;; END IDO
 
 ;; Less GC pauses
@@ -72,9 +77,7 @@
 
 ;; Adds timestamps to DONE todos
 (setq org-log-done t)
-(setq org-agenda-files (list "~/Dropbox/orgs/work.org"
-			     "~/Dropbox/orgs/personal.org"
-			     "~/Dropbox/orgs/rebelguru.org"))
+(setq org-agenda-files (list "~/Dropbox/orgs/"))
 
 (setq initial-buffer-choice "~/Dropbox/orgs/work.org")
 ;; END org mode setup
@@ -110,9 +113,26 @@
 		      clojure-mode
 		      cider
 		      darcula-theme
+		      enh-ruby-mode
                       ido-ubiquitous
+		      inf-ruby
 		      magit
-		      markdown-mode))
+		      markdown-mode
+		      rinari))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-files
+   (quote
+    ("~/Dropbox/orgs/muquestion/work.org" "/Users/mohit/Dropbox/orgs/31.org" "/Users/mohit/Dropbox/orgs/accounts.org" "/Users/mohit/Dropbox/orgs/ideas.org" "/Users/mohit/Dropbox/orgs/lan-setup.org" "/Users/mohit/Dropbox/orgs/leads.org" "/Users/mohit/Dropbox/orgs/personal.org" "/Users/mohit/Dropbox/orgs/rebelguru.org" "/Users/mohit/Dropbox/orgs/work.org"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
