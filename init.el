@@ -123,8 +123,7 @@
                       ido-ubiquitous
 		      inf-ruby
 		      magit
-		      markdown-mode
-		      rinari))
+		      markdown-mode))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
