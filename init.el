@@ -103,6 +103,7 @@
 
 ;; My packages
 (defvar my-packages '(ace-jump-mode
+		      ag
 		      rainbow-delimiters
 		      paredit
 		      company-mode
