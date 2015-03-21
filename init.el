@@ -114,6 +114,7 @@
 		      cider
 		      darcula-theme
 		      enh-ruby-mode
+		      exec-path-from-shell
                       ido-ubiquitous
 		      inf-ruby
 		      magit
