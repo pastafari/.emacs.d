@@ -59,13 +59,13 @@
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
-
+;; END IDO
 
 ;; enable recent files
 (require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
-;; END IDO
+;; end recentf setup
 
 ;; Less GC pauses
 (setq gc-cons-threshold 20000000)
@@ -117,7 +117,6 @@
 		      clojure-mode
 		      cider
 		      darcula-theme
-		      enh-ruby-mode
 		      exec-path-from-shell
 		      find-file-in-project
                       ido-ubiquitous
