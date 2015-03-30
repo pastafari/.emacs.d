@@ -59,6 +59,7 @@
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+(setq ido-use-virtual-buffers t)
 ;; END IDO
 
 ;; enable recent files
