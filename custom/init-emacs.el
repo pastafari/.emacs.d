@@ -10,7 +10,7 @@
 ;; (    / .MMm.Y_)/      ,'   turned me into    |
 ;;  `'(|.oMMMM       __,',-'`._  ascii art!   ,'
 ;;  d88:'mOom        `--'      `-..______,--''
-;;  88::(::\d88b
+;;  88::(::d88b
 ;;  Y88  ':88888
 ;;_________888P__________________________________________________osfa
 ;;|                                                                  |
@@ -21,6 +21,8 @@
 ;;|__________________________________________________________________|
 ")
 
+(require 'ansi-color)
+
 (setq inhibit-startup-screen t)
 
 ;; Less GC pauses
@@ -29,4 +31,5 @@
 ;; No backup files. Because, Git
 (setq make-backup-files nil)
 
-(add-hook 'emacs-startup-hook 'zone)
+(when (display-graphic-p)
+  (add-hook 'emacs-startup-hook 'zone))
