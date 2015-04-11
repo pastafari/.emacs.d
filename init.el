@@ -5,6 +5,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/custom/")
 
+;; Order is important, zone setup is required by emacs
+;; TODO: clean up so that order isnt important!
+(load "init-zone.el")
 (load "init-emacs.el")
 (load "init-ui.el")
 (if (eq system-type 'darwin)
