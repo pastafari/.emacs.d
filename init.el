@@ -55,7 +55,8 @@
                       ido-ubiquitous
 		      inf-ruby
 		      magit
-		      markdown-mode))
+		      markdown-mode
+		      wc-mode))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
