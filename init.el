@@ -3,10 +3,12 @@
 
 ;;; TODO: move this into its own file. figure out customizations with el-get
 ;;; UI setup
-;;; Hide the menu-bar, scroll-bar, tool-bar
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
+;;; Hide the menu-bar, scroll-bar, tool-bar when in GUI mode
+(if (display-graphic-p)
+  (progn
+    (menu-bar-mode -1)
+    (tool-bar-mode -1)
+    (scroll-bar-mode -1)))
 
 ;; No cursor blinking, it's distracting
 (blink-cursor-mode 0)
@@ -87,7 +89,7 @@
 (setq org-log-done t)
 (setq org-agenda-files (list "~/Dropbox/orgs/"))
 
-(setq initial-buffer-choice "~/Dropbox/orgs/work.org")
+(add-to-list 'org-export-backends 'md)
 ;; END org mode setup
 
 ;; el-get basic setup
