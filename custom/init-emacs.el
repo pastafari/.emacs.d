@@ -1,7 +1,7 @@
 ;; Put emacs specific stuff here. Nothing package related.
 
 (setq initial-scratch-message
-"
+"                           ALOHA! WELCOME TO EMACS.
 ;;         ===.
 ;;     =====.==`.               __,------._
 ;;        ===`.8=);   _/)    .-'           ``-.
@@ -33,3 +33,9 @@
 
 (when (display-graphic-p)
   (add-hook 'emacs-startup-hook 'zone))
+
+;; Delete trailing whitespace on save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; revert buffer when file changes
+(global-auto-revert-mode)
