@@ -52,10 +52,12 @@
 		      darcula-theme
 		      exec-path-from-shell
 		      find-file-in-project
+		      helm
                       ido-ubiquitous
 		      inf-ruby
 		      magit
 		      markdown-mode
+		      rubocop
 		      wc-mode))
 
 (el-get 'sync my-packages)
