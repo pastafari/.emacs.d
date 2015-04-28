@@ -22,7 +22,7 @@
 (add-to-list 'load-path "~/.emacs.d/el-get/")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-(defun bootstrap-el-get () 
+(defun bootstrap-el-get ()
   (with-current-buffer
       (url-retrieve-synchronously
        "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
@@ -58,6 +58,7 @@
 		      magit
 		      markdown-mode
 		      rubocop
+		      scss-mode
 		      wc-mode))
 
 (el-get 'sync my-packages)
