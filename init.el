@@ -59,6 +59,7 @@
 		      markdown-mode
 		      rubocop
 		      scss-mode
+                      web-mode
 		      wc-mode))
 
 (el-get 'sync my-packages)
