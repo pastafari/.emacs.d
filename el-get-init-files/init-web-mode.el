@@ -10,7 +10,4 @@
 (setq-default web-mode-css-indent-offset 2)
 (setq-default web-mode-code-indent-offset 2)
 
-(eval-after-load 'web-mode
-  (progn '(add-to-list 'web-mode-engines-alist '(("mustache" . "\\.erb\\'")))))
-
 (provide 'init-web-mode)
