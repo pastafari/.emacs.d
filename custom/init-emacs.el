@@ -39,3 +39,6 @@
 
 ;; revert buffer when file changes
 (global-auto-revert-mode)
+
+;; add tab stop globally
+(setq default-tab-width 2)
