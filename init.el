@@ -43,24 +43,24 @@
 
 ;; My packages
 (defvar my-packages '(ace-jump-mode
-		      ag
-		      rainbow-delimiters
-		      paredit
-		      company-mode
-		      clojure-mode
-		      cider
-		      darcula-theme
-		      exec-path-from-shell
-		      find-file-in-project
-		      helm
+											ag
+											rainbow-delimiters
+											paredit
+											company-mode
+											clojure-mode
+											cider
+											darcula-theme
+											exec-path-from-shell
+											find-file-in-project
+											helm
                       ido-ubiquitous
-		      inf-ruby
-		      magit
-		      markdown-mode
-		      rubocop
-		      scss-mode
+											inf-ruby
+											magit
+											markdown-mode
+											rubocop
+											scss-mode
                       web-mode
-		      wc-mode))
+											wc-mode))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
