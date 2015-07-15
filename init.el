@@ -48,8 +48,10 @@
 											paredit
 											company-mode
 											clojure-mode
+											clj-refactor
 											cider
 											darcula-theme
+											dash
 											exec-path-from-shell
 											find-file-in-project
 											helm
