@@ -61,6 +61,7 @@
 											markdown-mode
 											rubocop
 											scss-mode
+											yaml-mode
                       web-mode
 											wc-mode))
 
