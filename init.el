@@ -54,7 +54,6 @@
 											dash
 											exec-path-from-shell
 											find-file-in-project
-											helm
                       ido-ubiquitous
 											inf-ruby
 											magit
