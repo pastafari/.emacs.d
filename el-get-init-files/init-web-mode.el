@@ -1,5 +1,6 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
 
 (setq-default web-mode-enable-auto-pairing t)
 (setq-default web-mode-enable-css-colorization t)
