@@ -62,7 +62,8 @@
 											scss-mode
 											yaml-mode
                       web-mode
-											wc-mode))
+											wc-mode
+											wgrep))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
