@@ -58,6 +58,7 @@
 											inf-ruby
 											magit
 											markdown-mode
+											multiple-cursors
 											rubocop
 											scss-mode
 											yaml-mode
