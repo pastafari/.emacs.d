@@ -61,6 +61,7 @@
 											rubocop
 											scss-mode
 											yaml-mode
+											yasnippet
                       web-mode
 											wc-mode
 											wgrep))
