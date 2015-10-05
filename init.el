@@ -59,6 +59,7 @@
 											magit
 											markdown-mode
 											multiple-cursors
+											org-journal
 											rubocop
 											scss-mode
 											yaml-mode
