@@ -62,6 +62,7 @@
 											org-journal
 											rubocop
 											scss-mode
+											tuareg-mode
 											yaml-mode
 											yasnippet
                       web-mode
