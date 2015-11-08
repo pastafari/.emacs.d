@@ -14,7 +14,7 @@
     (load "init-osx.el"))
 (load "init-ido.el")
 (load "init-org.el")
-
+(load "init-merlin.el")
 ;; END Customizations
 
 ;; el-get basic setup
