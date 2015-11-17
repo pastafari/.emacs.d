@@ -12,5 +12,9 @@
 
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
+(setq ruby-insert-encoding-magic-comment nil)
+
 (remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
 (add-hook 'enh-ruby-mode-hook 'rinari-minor-mode)
+
+(provide 'init-enh-ruby-mode)
