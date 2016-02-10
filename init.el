@@ -49,6 +49,7 @@
 											company-mode
 											clojure-mode
 											clj-refactor
+											seq
 											spinner
 											cider
 											darcula-theme
