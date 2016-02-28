@@ -58,12 +58,14 @@
 											find-file-in-project
                       ido-ubiquitous
 											inf-ruby
+                      keyfreq
 											magit
 											markdown-mode
 											multiple-cursors
 											org-journal
 											rubocop
 											scss-mode
+                      swiper  ; required by ffip for ivy-mode
 											tuareg-mode
 											yaml-mode
 											yasnippet
