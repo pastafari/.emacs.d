@@ -1,10 +1,9 @@
 ;;;
 ;; Paredit (h/t Vedang Manerikar)
-;;; 
+;;;
 
 (defvar paredit-major-modes
-  '(emacs-lisp-mode lisp-mode lisp-interaction-mode clojure-mode cider-repl-mode
-                    scheme-mode ielm-mode)
+  '(emacs-lisp-mode lisp-mode lisp-interaction-mode clojure-mode scheme-mode ielm-mode)
   "List of lispy modes that I use")
 
 (defun turn-on-paredit ()
