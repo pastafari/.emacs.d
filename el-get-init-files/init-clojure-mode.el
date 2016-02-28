@@ -43,8 +43,9 @@
 (eval-after-load 'clojure-mode
   '(progn
      (require 'clojure-mode-extra-font-locking)
+     (clj-refactor-mode 1)
      (add-hook 'clojure-mode-hook #'paredit-mode)
-     (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)   
+     (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
      (add-hook 'clojure-mode-hook 'pretty-fns)
      (add-hook 'clojure-mode-hook 'pretty-sets)
      (add-hook 'clojure-mode-hook 'pretty-reader-macros)
