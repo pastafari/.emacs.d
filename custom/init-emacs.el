@@ -1,4 +1,4 @@
-;; Put emacs specific stuff here. Nothing package related.
+d;; Put emacs specific stuff here. Nothing package related.
 
 (setq initial-scratch-message
 "                           ALOHA! WELCOME TO EMACS.
@@ -43,3 +43,7 @@
 ;; add tab stop globally
 (setq default-tab-width 2)
 (setq-default indent-tabs-mode nil)
+
+;; 80 columns matter
+(setq-default fill-column 80)
+(global-visual-line-mode)
