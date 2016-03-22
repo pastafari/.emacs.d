@@ -1,4 +1,4 @@
-d;; Put emacs specific stuff here. Nothing package related.
+;; Put emacs specific stuff here. Nothing package related.
 
 (setq initial-scratch-message
 "                           ALOHA! WELCOME TO EMACS.
@@ -50,4 +50,4 @@ d;; Put emacs specific stuff here. Nothing package related.
 
 ;; Use emacs-custom.el for custom stuff
 (setq custom-file "~/.emacs.d/emacs-custom.el")
-(load-file "~/.emacs.d/emacs-custom.el")
+(load custom-file)
