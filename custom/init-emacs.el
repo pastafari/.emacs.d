@@ -47,3 +47,7 @@ d;; Put emacs specific stuff here. Nothing package related.
 ;; 80 columns matter
 (setq-default fill-column 80)
 (global-visual-line-mode)
+
+;; Use emacs-custom.el for custom stuff
+(setq custom-file "~/.emacs.d/emacs-custom.el")
+(load-file "~/.emacs.d/emacs-custom.el")
