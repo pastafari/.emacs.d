@@ -51,5 +51,8 @@
      (add-hook 'clojure-mode-hook 'pretty-reader-macros)
      (add-hook 'clojure-mode-hook 'subword-mode)))
 
+(add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
+(add-to-list 'magic-mode-alist '(".* boot" . clojure-mode))
+
 (provide 'init-clojure-mode)
 ;;; init-clojure-mode ends here
