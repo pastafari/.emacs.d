@@ -27,7 +27,7 @@
 (eval-after-load 'cider
   '(progn (define-key clojure-mode-map (kbd "TAB") 'complete-symbol)))
 
+;; Do not display large-ass help banner in REPL
+(setq cider-repl-display-help-banner nil)
+
 (provide 'init-cider)
-
-
-
