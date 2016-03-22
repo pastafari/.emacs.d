@@ -1,6 +1,6 @@
 (:name cider
        :description "CIDER is a Clojure IDE and REPL."
        :type github
-       :checkout "v0.10.2"
+       :checkout "v0.11.0"
        :pkgname "clojure-emacs/cider"
        :depends (dash queue clojure-mode pkg-info))
