@@ -42,6 +42,7 @@
 
 ;; spaces not tabs
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
 
 ;; 80 columns matter
 (setq-default fill-column 80)
