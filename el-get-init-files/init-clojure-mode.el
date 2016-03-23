@@ -49,7 +49,8 @@
      (add-hook 'clojure-mode-hook 'pretty-fns)
      (add-hook 'clojure-mode-hook 'pretty-sets)
      (add-hook 'clojure-mode-hook 'pretty-reader-macros)
-     (add-hook 'clojure-mode-hook 'subword-mode)))
+     (add-hook 'clojure-mode-hook 'subword-mode)
+     (define-key clojure-mode-map (kbd "TAB") 'company-indent-or-complete-common)))
 
 (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
 (add-to-list 'magic-mode-alist '(".* boot" . clojure-mode))
