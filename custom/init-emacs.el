@@ -40,8 +40,7 @@
 ;; revert buffer when file changes
 (global-auto-revert-mode)
 
-;; add tab stop globally
-(setq default-tab-width 2)
+;; spaces not tabs
 (setq-default indent-tabs-mode nil)
 
 ;; 80 columns matter
