@@ -43,35 +43,35 @@
 
 ;; My packages
 (defvar my-packages '(ace-jump-mode
-											ag
-											rainbow-delimiters
-											paredit
-											company-mode
-											clojure-mode
-											clj-refactor
-											seq
-											spinner
-											cider
-											darcula-theme
-											dash
-											exec-path-from-shell
-											find-file-in-project
+                      ag
+                      rainbow-delimiters
+                      paredit
+                      company-mode
+                      clojure-mode
+                      clj-refactor
+                      seq
+                      spinner
+                      cider
+                      darcula-theme
+                      dash
+                      exec-path-from-shell
+                      find-file-in-project
                       ido-ubiquitous
-											inf-ruby
+                      inf-ruby
                       keyfreq
-											magit
-											markdown-mode
-											multiple-cursors
-											org-journal
-											rubocop
-											scss-mode
-                      swiper  ; required by ffip for ivy-mode
-											tuareg-mode
-											yaml-mode
-											yasnippet
+                      magit
+                      markdown-mode
+                      multiple-cursors
+                      org-journal
+                      rubocop
+                      scss-mode
+                      swiper           ; required by ffip for ivy-mode
+                      tuareg-mode
+                      yaml-mode
+                      yasnippet
                       web-mode
-											wc-mode
-											wgrep))
+                      wc-mode
+                      wgrep))
 
 (el-get 'sync my-packages)
 ;; END el-get setup
