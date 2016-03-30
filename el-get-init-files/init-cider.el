@@ -24,8 +24,8 @@
 ;; better docs in cider
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
-(eval-after-load 'cider
-  '(progn (define-key clojure-mode-map (kbd "TAB") 'complete-symbol)))
+;; auto complete on tab
+(setq cider-repl-tab-command 'cider-repl-indent-and-complete-symbol)
 
 ;; Do not display large-ass help banner in REPL
 (setq cider-repl-display-help-banner nil)
